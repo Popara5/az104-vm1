@@ -1,0 +1,21 @@
+***Create a virtual machine using Azure PowerShell
+
+ResourceGroupName 'az104-rg8' `
+ -Name 'myPSVM' `
+ -Location 'East US' `
+ -Image 'Win2019Datacenter' `
+ -Zone '1' `
+ -Size 'Standard_D2s_v3' `
+ -Credential (Get-Credential)
+
+***Once the command completes, use Get-AzVM to list the virtual machines in your resource group.
+Get-AzVM `
+ -ResourceGroupName 'az104-rg8' `
+ -Status
+***Verify your new virtual machine is listed and the Status is Running.
+Use Stop-AzVM to deallocate your virtual machine. Type Yes to confirm
+Stop-AzVM `
+ -ResourceGroupName 'az104-rg8' `
+ -Name 'myPSVM'
+****Use Get-AzVM with the -Status parameter to verify the machine is deallocated.
+Did you know? When you use Azure to stop your virtual machine, the status is deallocated. This means that any non-static public IPs are released, and you stop paying for the VM’s compute costs.
