@@ -1,0 +1,32 @@
+{
+    "apiVersion": "2024-03-02",
+    "id": "/subscriptions/c026ac07-ffac-4e08-b69c-9240e6d12833/resourceGroups/AZ104-RG8/providers/Microsoft.Compute/disks/vm1-disk1",
+    "name": "vm1-disk1",
+    "type": "microsoft.compute/disks",
+    "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+    },
+    "location": "eastus",
+    "zones": [
+        "1"
+    ],
+    "properties": {
+        "creationData": {
+            "createOption": "Empty"
+        },
+        "diskSizeGB": 32,
+        "diskIOPSReadWrite": 500,
+        "diskMBpsReadWrite": 60,
+        "encryption": {
+            "type": "EncryptionAtRestWithPlatformKey"
+        },
+        "networkAccessPolicy": "AllowAll",
+        "publicNetworkAccess": "Enabled",
+        "timeCreated": "2024-12-30T17:03:06.445Z",
+        "provisioningState": "Succeeded",
+        "diskState": "Unattached",
+        "LastOwnershipUpdateTime": "2024-12-30T17:04:10.492Z",
+        "diskSizeBytes": 34359738368,
+        "uniqueId": "91fae090-22b8-4908-bfce-c99b3870f23f"
+    }
