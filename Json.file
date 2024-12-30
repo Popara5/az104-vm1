@@ -1,0 +1,82 @@
+{
+    "apiVersion": "2024-07-01",
+    "id": "/subscriptions/c026ac07-ffac-4e08-b69c-9240e6d12833/resourceGroups/az104-rg8/providers/Microsoft.Compute/virtualMachines/az104-vm1",
+    "name": "az104-vm1",
+    "type": "microsoft.compute/virtualmachines",
+    "location": "eastus",
+    "zones": [
+        "1"
+    ],
+    "properties": {
+        "hardwareProfile": {
+            "vmSize": "Standard_D2s_v3"
+        },
+        "provisioningState": "Succeeded",
+        "vmId": "26d82e03-1b3e-44a2-abc2-cc1de8e77f5a",
+        "additionalCapabilities": {
+            "hibernationEnabled": false
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2019-datacenter-gensecond",
+                "version": "latest",
+                "exactVersion": "17763.6659.241205"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "az104-vm1_OsDisk_1_f700b90a7e414630bc885b66de6abaa8",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS",
+                    "id": "/subscriptions/c026ac07-ffac-4e08-b69c-9240e6d12833/resourceGroups/az104-rg8/providers/Microsoft.Compute/disks/az104-vm1_OsDisk_1_f700b90a7e414630bc885b66de6abaa8"
+                },
+                "deleteOption": "Delete",
+                "diskSizeGB": 127
+            },
+            "dataDisks": [],
+            "diskControllerType": "SCSI"
+        },
+        "osProfile": {
+            "computerName": "az104-vm1",
+            "adminUsername": " localadmin",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true,
+                "patchSettings": {
+                    "patchMode": "AutomaticByPlatform",
+                    "automaticByPlatformSettings": {
+                        "rebootSetting": "IfRequired"
+                    },
+                    "assessmentMode": "ImageDefault",
+                    "enableHotpatching": false
+                },
+                "enableVMAgentPlatformUpdates": true
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "securityProfile": {
+            "uefiSettings": {
+                "secureBootEnabled": true,
+                "vTpmEnabled": true
+            },
+            "securityType": "TrustedLaunch"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/c026ac07-ffac-4e08-b69c-9240e6d12833/resourceGroups/az104-rg8/providers/Microsoft.Network/networkInterfaces/az104-vm198_z1",
+                    "properties": {
+                        "deleteOption": "Delete"
+                    }
+                }
+            ]
+        },
+        "timeCreated": "2024-12-30T16:48:51.87Z"
+    },
+    "etag": "\"2\""
+}
