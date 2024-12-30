@@ -18,3 +18,6 @@ Use az vm deallocate to deallocate your virtual machine. Type Yes to confirm.
 Did you know? When you use Azure to stop your virtual machine, the status is deallocated. This means that any non-static public IPs are released, and you stop paying for the VM’s compute costs.
 
 
+****In the Azure portal, select the resource group, select Delete the resource group, Enter resource group name, and then click Delete.
+Using Azure PowerShell, Remove-AzResourceGroup -Name resourceGroupName.
+Using the CLI, az group delete --name resourceGroupName.
