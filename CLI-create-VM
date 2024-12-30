@@ -1,0 +1,20 @@
+Create a virtual machine using the CLI
+***Use the icon (top right) to launch a Cloud Shell session. Alternately, navigate directly to https://shell.azure.com.
+Be sure to select Bash. If necessary, configure the shell storage.
+Run the following command to create a virtual machine. When prompted, provide a username and password for the VM. While you wait check out the az vm create command reference for all the parameters associated with creating a virtual machine.
+
+# az vm create --name myCLIVM --resource-group az104-rg8 --image Ubuntu2204 --admin-username localadmin --generate-ssh-keys
+
+****Once the command completes, use az vm show to verify your machine was created.
+
+# az vm show --name  myCLIVM --resource-group az104-rg8 --show-details
+
+****Verify the powerState is VM Running.
+Use az vm deallocate to deallocate your virtual machine. Type Yes to confirm.
+
+# az vm deallocate --resource-group az104-rg8 --name myCLIVM
+
+****Use az vm show to ensure the powerState is VM deallocated.
+Did you know? When you use Azure to stop your virtual machine, the status is deallocated. This means that any non-static public IPs are released, and you stop paying for the VM’s compute costs.
+
+
